@@ -1,0 +1,22 @@
+<div id="sign_in">
+  <header class="row">
+    <h1 class="sub_title">
+      <a href="<%= request.referer %>"  class="back left"></a>
+      登 录
+    </h1>
+  </header>
+    <div class="login_box">
+        <%= form_tag(controller: "sessions", action: "login_post",  method: "post") do %>
+          <div class="form-group">
+            <%= text_field_tag 'phone', nil, class: 'form-control', placeholder: '手机号/会员卡号' %>
+          </div>
+          <div class="form-group">
+            <%= password_field_tag 'password', nil, class: 'form-control', placeholder: '密码' %>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-block btn-info">登 录</button>
+          </div>
+        <% end %>
+    </div>
+</div>

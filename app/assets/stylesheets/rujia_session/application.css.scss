@@ -1,0 +1,148 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+@import "bootstrap";
+
+$bg-color: #fbf6ee;
+$font-color: #4d2d09;
+$font-shallow-color: #a09385;
+$font-orange-color: #fa8741;
+$border-color: #dbc398;
+$red-border-color: #fa6482;
+$button-blue-color: #26c3ed;
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body.container{
+  font-size: 16px;
+  background-color: #fbf6ee;
+  font-family: 'Microsoft YaHei';
+  padding: 15px;
+  padding-bottom: 45px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  &:hover, &:active{
+    text-decoration: none;
+  }
+}
+
+.back{
+  display: inline-block;
+  background-image: asset-url("_0053_back.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  margin-top: 16px;
+}
+
+
+
+header{
+  h1{
+    margin: 0;
+    margin-bottom: .3em;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+  }
+}
+
+.modal-footer{
+  button{
+    padding: 5px 20px;
+  }
+  a{
+    padding: 5px 20px;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  body.container{
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  [class^="col-xs-"]{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .row{
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .btn{
+    padding: 3px 6px;
+  }
+
+  .form-control{
+    padding: 3px 6px;
+  }
+
+  .clearfix{
+    background: none;
+    border: 0;
+    clear: both;
+    display: block;
+    width: 0;
+    height: 0;
+    float: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .list-group-item{
+    padding: 10px 8px;
+  }
+
+}
+
+.none{display: none;}
+.headline{
+  color: #A89D8D;
+}
+.font_one{
+  color: #6C5D50;
+}
+.sub_title{
+  padding: 10px;
+}
+p{
+  padding:5px;
+}
+section{
+  overflow-x:hidden;
+}
+header{
+  overflow-x:hidden;
+}

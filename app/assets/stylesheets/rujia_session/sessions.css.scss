@@ -1,0 +1,29 @@
+#sign_in{
+  margin-top: -15px;
+  header{
+    background-color: #fbf6ee;
+    border-bottom: 1px dashed #dbc398;
+    text-align: center;
+    h1{
+      text-align: center;
+      font-size: 1.5em;
+      margin:0;
+      position: relative;
+
+
+      .back{
+        position: absolute;
+        left: 0.5em;
+        top: .25em;
+      }
+    }
+  }
+  .login_box{
+    margin-top: 20px;
+    .btn{
+      height: 2.5em;
+      font-size: 20px;
+      letter-spacing: 5px;
+    }
+  }
+}
